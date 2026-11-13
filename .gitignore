@@ -1,0 +1,17 @@
+# Sistema operacional
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores / IDEs
+.vscode/
+.idea/
+
+# Segredos e configs locais (nunca versionar)
+.env
+*.local
+
+# Documentos reais: mantenha fora do repositório
+# (descomente se quiser colocar os PDFs reais só na máquina local)
+# projeto_totem/pdfs/*
+# !projeto_totem/pdfs/cdc.pdf

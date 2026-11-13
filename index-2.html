@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farma Modelo x Cliente</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<script src="js/script.js"></script>
+
+<script src="js/cursor.js"></script>
+
+<body>
+
+<div class="container">
+
+    <img src="imagens/logo.png"
+         alt="Farma Modelo"
+         class="logo">
+
+    <h1>Bem-vindo à Farma Modelo</h1>
+
+    <p class="subtitulo">
+        
+    </p>
+
+    <div class="cards">
+
+        <a class="card" href="documentos.html">
+
+            <div class="icone">📁</div>
+            <div class="titulo">Documentos Regulatórios</div>
+            <div class="descricao">
+                A Farma Modelo preza por transparência, por isso deixamos aqui <br>
+                 disponíveis todos os nossos documentos de regularidade. <br>
+                 Fique à vontade para consultá-los.
+            </div>
+
+        </a>
+
+        <a class="card"
+   href="pesquisa.html">
+
+            <div class="icone">⭐</div>
+            <div class="titulo">Pesquisa de Satisfação</div>
+            <div class="descricao">
+                Sua participação em nossa pesquisa é muito importante, <br>
+                 pois nos interessa melhorar continuamente para lhe oferecer <br>
+                 uma assistência cada vez melhor.
+            </div>
+
+        </a>
+
+        <button class="card"
+                onclick="abrirQRCode()">
+
+            <div class="icone">📍</div>
+            <div class="titulo">Deixe a sua avaliação em nossa página do Google.</div>
+            <div class="descricao">
+                Escaneie o QR Code
+            </div>
+
+        </button>
+
+        <a class="card"
+   href="visualizar-pdf.html?arquivo=pdfs/cdc.pdf&origem=index.html">
+
+            <div class="icone">⚖️</div>
+            <div class="titulo">Código de Proteção e Defesa do Consumidor</div>
+            <div class="descricao">
+                Consulte seus direitos
+            </div>
+
+        </a>
+
+    </div>
+
+</div>
+
+<div id="modalQR" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Avalie sua experiência</h2>
+
+        <p>
+            Escaneie o QR Code com a câmera do seu celular
+            e deixe sua avaliação no Google.
+        </p>
+
+        <img src="imagens/qrcode.png"
+             alt="QR Code Avaliação Google">
+
+        <br>
+
+        <button onclick="fecharQRCode()">
+            Fechar
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

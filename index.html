@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farma Modelo x Cliente</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<script src="js/script.js"></script>
+
+<script src="js/cursor.js"></script>
+
+<body class="pagina-inicial">
+
+<div class="container">
+
+    <img src="imagens/logo.png"
+         alt="Farma Modelo"
+         class="logo">
+
+    <h1>Bem-vindo à Farma Modelo</h1>
+
+    <p class="subtitulo">
+        Documentos obrigatórios exibidos ao público. Toque para ampliar.
+    </p>
+
+    <div class="documentos-destaque">
+
+        <a class="documento-card"
+           href="visualizar-pdf.html?arquivo=pdfs/principais/alvara-sanitario.pdf&origem=index.html">
+
+            <div class="documento-moldura">
+                <img src="imagens/miniaturas/alvara-sanitario.jpg"
+                     alt="Alvará de Autorização Sanitária">
+                <div class="documento-lupa">🔍</div>
+            </div>
+
+            <div class="documento-titulo">Alvará de Autorização Sanitária</div>
+            <div class="documento-validade">Válido até 31/12/2030</div>
+
+        </a>
+
+        <a class="documento-card"
+           href="visualizar-pdf.html?arquivo=pdfs/principais/certidao-regularidade.pdf&origem=index.html">
+
+            <div class="documento-moldura">
+                <img src="imagens/miniaturas/certidao-regularidade.jpg"
+                     alt="Certidão de Regularidade Técnica">
+                <div class="documento-lupa">🔍</div>
+            </div>
+
+            <div class="documento-titulo">Certidão de Regularidade Técnica</div>
+            <div class="documento-validade">Válida até 31/12/2030</div>
+
+        </a>
+
+    </div>
+
+</div>
+
+<div class="barra-navegacao">
+
+    <a class="nav-btn" href="documentos.html">
+        <span class="nav-icone">📁</span>
+        Documentos Regulatórios
+    </a>
+
+    <a class="nav-btn" href="pesquisa.html">
+        <span class="nav-icone">⭐</span>
+        Pesquisa de Satisfação
+    </a>
+
+    <button class="nav-btn" onclick="abrirQRCode()">
+        <span class="nav-icone">📍</span>
+        Avaliação Google
+    </button>
+
+    <a class="nav-btn" href="visualizar-pdf.html?arquivo=pdfs/cdc.pdf&origem=index.html">
+        <span class="nav-icone">⚖️</span>
+        Defesa do Consumidor
+    </a>
+
+</div>
+
+<div id="modalQR" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Avalie sua experiência</h2>
+
+        <p>
+            Escaneie o QR Code com a câmera do seu celular
+            e deixe sua avaliação no Google.
+        </p>
+
+        <img src="imagens/qrcode.png"
+             alt="QR Code Avaliação Google">
+
+        <br>
+
+        <button onclick="fecharQRCode()">
+            Fechar
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

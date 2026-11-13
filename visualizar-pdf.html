@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Documento</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a id="btnVoltar" class="botao-voltar">
+        ← Voltar
+    </a>
+
+    <a href="index.html" class="botao-home">
+        🏠 Início
+    </a>
+
+    <!-- ============================== -->
+    <!-- LOADING                        -->
+    <!-- ============================== -->
+
+    <div id="loading">
+        <img src="imagens/logo.png" class="loading-logo" alt="Farma Modelo">
+        <h2 class="loading-text">Carregando documento...</h2>
+        <div class="barra">
+            <div id="progresso" class="progresso"></div>
+        </div>
+    </div>
+
+    <!-- ============================== -->
+    <!-- PDF                            -->
+    <!-- ============================== -->
+
+    <div class="pdf-container">
+        <iframe id="pdfFrame" class="pdf-frame" loading="eager"></iframe>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+    <script src="js/pdf.js"></script>
+    <script src="js/inatividade.js"></script>
+    <script src="js/cursor.js"></script>
+
+</body>
+
+</html>
